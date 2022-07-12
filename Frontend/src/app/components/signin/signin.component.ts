@@ -23,7 +23,7 @@ export class SigninComponent implements OnInit {
     private authState: AuthStateService
   ) {
     this.loginForm = this.fb.group({
-      email: [],
+      username: [],
       password: [],
     });
   }
