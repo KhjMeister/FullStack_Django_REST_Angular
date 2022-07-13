@@ -14,6 +14,7 @@ uritemplate = "*"
 drf-yasg = "*"
 pillow = "*"
 django-cors-headers = "*"
+djangorestframework-jwt = "*"
 
 [dev-packages]
 
