@@ -1,4 +1,36 @@
-<header class="site-header">
+ <nav class="w-full py-4 bg-purple-600 shadow">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between">
+
+        <nav>
+            <ul class="flex items-center justify-between font-bold text-sm text-white uppercase no-underline">
+                <li *ngIf="!loggedIn()"><a class="hover:text-gray-200 hover:underline px-4" href="#" routerLink="login">login</a></li>
+                <li *ngIf="!loggedIn()"><a class="hover:text-gray-200 hover:underline px-4" href="#" routerLink="register">register</a></li>
+                <li *ngIf="loggedIn()" (click)="logout()" class="hover:text-gray-200 hover:underline px-4"><a  >خروج</a></li>
+                <li *ngIf="loggedIn()"><a class="hover:text-gray-200 hover:underline px-4" routerLink="dashboard" >داشبرد</a></li>
+            </ul>
+        </nav>
+
+        <div class="flex items-center text-lg no-underline text-white pr-6" dir="ltr">
+            <a class="" href="#">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a class="pl-6" href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="pl-6" href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="pl-6" href="#">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+
+</nav>
+
+
+
+<!-- <header class="site-header">
     <div class="container">
         <a routerLink="" id="branding">
             <img width="50px" height="50px" src="./assets/film.svg" alt="" class="logo">
@@ -6,16 +38,16 @@
                 <h1 class="site-title">شیلیمو</h1>
                 <small class="site-description">فیلم های برتر</small>
             </div>
-        </a> <!-- #branding -->
+        </a> 
 
         <div class="main-navigation">
             <ul class="menu">
                 <li *ngIf="loggedIn()" routerLinkActive="current-menu-item" class="menu-item "><a routerLink="dashboard" >داشبرد</a></li>
                 <li *ngIf="loggedIn()" routerLinkActive="current-menu-item" class="menu-item "><a routerLink="buyaccount" >خرید اشتراک</a></li>
-                <li *ngIf="loggedIn()" (click)="logout()" class="menu-item logoutt"><a  >خروج</a></li>
                 
-                <li *ngIf="!loggedIn()" routerLinkActive="current-menu-item" class="menu-item"><a routerLink="register">ثبت نام</a></li>
-                <li *ngIf="!loggedIn()" routerLinkActive="current-menu-item" class="menu-item"><a routerLink="login">ورود</a></li>
+                
+                <li *ngIf="!loggedIn()" routerLinkActive="current-menu-item" class="menu-item"><a >ثبت نام</a></li>
+                <li  routerLinkActive="current-menu-item" class="menu-item"><a >ورود</a></li>
             </ul> 
             <form *ngIf="loggedIn()" class="search">
                 <input type="text" placeholder="جستجو...">
@@ -26,3 +58,4 @@
         <div class="mobile-navigation"></div>
     </div>
 </header>
+ -->

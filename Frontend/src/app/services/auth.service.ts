@@ -5,8 +5,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 import { environment } from 'src/environments/environment';
 import { BehaviorSubject } from 'rxjs';
 import { User } from '../models/user'
-import { TokenError } from '@angular/compiler/src/ml_parser/lexer';
-import { TextAttribute } from '@angular/compiler/src/render3/r3_ast';
+
 
 @Injectable({
   providedIn: 'root'
@@ -36,7 +35,7 @@ export class AuthService {
 
   }
   register(user:User[]){
-    return this.http.post(this.baseUrl+'auth/register',user);
+    return this.http.post(this.baseUrl+'api/register/',user);
   }
   loggedIn(){
     const token:any = localStorage.getItem('accessToken');
@@ -49,7 +48,8 @@ export class AuthService {
   const token:any = localStorage.getItem('accessToken');
   const decodedToken= this.jwtHelper.decodeToken(token);
   if (decodedToken.role==="Member"){
-    return false;
+    // return false;
+    return true;
   }else{
     return true;
   }

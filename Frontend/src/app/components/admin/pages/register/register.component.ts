@@ -11,10 +11,12 @@ import { NotifyService } from 'src/app/services/notify.service';
 })
 export class RegisterComponent implements OnInit {
   registerForm = this.formBuilder.group({
-    fullname: ['', [Validators.required]],
-    phone: ['', [Validators.required,Validators.pattern('09(1[0-9]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4}')]],
+    username: ['', [Validators.required]],
+    // phone: ['', [Validators.required,Validators.pattern('09(1[0-9]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4}')]],
     email: ['', [Validators.required,Validators.email]],
-    password: ['', [Validators.required, Validators.minLength(4),Validators.maxLength(8)]],
+    password1: ['', [Validators.required, Validators.minLength(4),Validators.maxLength(8)]],
+    password2: ['', [Validators.required, Validators.minLength(4),Validators.maxLength(8)]],
+    
     
 }  );
   get f() { return this.registerForm.controls; }

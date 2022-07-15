@@ -25,6 +25,9 @@ import { FooterComponent } from './components/landing/shared/footer/footer.compo
 import { ActiveaccountComponent } from './components/landing/pages/activeaccount/activeaccount.component';
 import { AuthGuard } from './guards/auth.guard';
 import { NotifyService } from './services/notify.service';
+import { PostsComponent } from './components/landing/shared/posts/posts.component';
+import { PostDetailComponent } from './components/landing/shared/post-detail/post-detail.component';
+import { PaginationComponent } from './components/landing/shared/pagination/pagination.component';
 
 
 
@@ -39,6 +42,9 @@ import { NotifyService } from './services/notify.service';
     SlidshowComponent,
     FooterComponent,
     ActiveaccountComponent,
+    PostsComponent,
+    PostDetailComponent,
+    PaginationComponent,
    
     
   ],
