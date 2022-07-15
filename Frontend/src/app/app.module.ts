@@ -52,7 +52,7 @@ import { NotifyService } from './services/notify.service';
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
-        allowedDomains: ['localhost:5000'],
+        allowedDomains: ['localhost:8000'],
         // disallowedRoutes: ['localhost:5000/auth'],
       },
     })
