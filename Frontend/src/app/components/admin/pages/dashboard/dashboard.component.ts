@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+
+isSideMenuOpen:boolean = false
+send(status:boolean){
+    this.isSideMenuOpen = status;
   
+  }
   constructor() { }
 
   ngOnInit(): void {
@@ -27,40 +32,25 @@ export class DashboardComponent implements OnInit {
 //   window.localStorage.setItem('dark', value)
 // }
 
-isSideMenuOpen = false;
-
-toggleSideMenu() {
-    this.isSideMenuOpen = !this.isSideMenuOpen
-}
-closeSideMenu() {
-    this.isSideMenuOpen = false
-}
-dark = false
+dark:boolean = false
 toggleTheme() {
   this.dark = !this.dark
   // setThemeToLocalStorage(this.dark)
 }
 
-isNotificationsMenuOpen= false 
+isNotificationsMenuOpen:boolean= false 
 toggleNotificationsMenu() {
   this.isNotificationsMenuOpen = !this.isNotificationsMenuOpen
 }
 closeNotificationsMenu() {
   this.isNotificationsMenuOpen = false
 }
-isProfileMenuOpen= false
-toggleProfileMenu() {
-  this.isProfileMenuOpen = !this.isProfileMenuOpen
-}
-closeProfileMenu() {
-  this.isProfileMenuOpen = false
-}
-isPagesMenuOpen= false
-togglePagesMenu() {
-  this.isPagesMenuOpen = !this.isPagesMenuOpen
-}
+
+
+
+
   
-isModalOpen= false
+isModalOpen:boolean= false
 trapCleanup= null
 openModal() {
     this.isModalOpen = true

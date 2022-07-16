@@ -28,6 +28,8 @@ import { NotifyService } from './services/notify.service';
 import { PostsComponent } from './components/landing/shared/posts/posts.component';
 import { PostDetailComponent } from './components/landing/shared/post-detail/post-detail.component';
 import { PaginationComponent } from './components/landing/shared/pagination/pagination.component';
+import { SidbarComponent } from './components/admin/shared/sidbar/sidbar.component';
+import { TopbarComponent } from './components/admin/shared/topbar/topbar.component';
 
 
 
@@ -45,6 +47,8 @@ import { PaginationComponent } from './components/landing/shared/pagination/pagi
     PostsComponent,
     PostDetailComponent,
     PaginationComponent,
+    SidbarComponent,
+    TopbarComponent,
    
     
   ],
