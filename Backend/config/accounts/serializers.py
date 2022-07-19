@@ -20,4 +20,4 @@ class UserSerializer(serializers.ModelSerializer):
         user_obj = User(username=username, email=email)
         user_obj.set_password(password)
         user_obj.save()
-        return 
+        return user_obj
