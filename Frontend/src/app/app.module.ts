@@ -30,6 +30,7 @@ import { PostDetailComponent } from './components/landing/shared/post-detail/pos
 import { PaginationComponent } from './components/landing/shared/pagination/pagination.component';
 import { SidbarComponent } from './components/admin/shared/sidbar/sidbar.component';
 import { TopbarComponent } from './components/admin/shared/topbar/topbar.component';
+import { BusnessComponent } from './components/landing/pages/busness/busness.component';
 
 
 
@@ -49,6 +50,7 @@ import { TopbarComponent } from './components/admin/shared/topbar/topbar.compone
     PaginationComponent,
     SidbarComponent,
     TopbarComponent,
+    BusnessComponent,
    
     
   ],

@@ -6,11 +6,16 @@ import { IndexComponent } from './components/landing/pages/index/index.component
 import { LoginComponent } from './components/admin/pages/login/login.component';
 import { RegisterComponent } from './components/admin/pages/register/register.component';
 import { AuthGuard } from './guards/auth.guard';
+import { BusnessComponent } from './components/landing/pages/busness/busness.component';
 
 const routes: Routes = [
   {
     path:"",
     component:IndexComponent
+  },
+  {
+    path:"busness",
+    component:BusnessComponent
   },
   {
     path:"login",
